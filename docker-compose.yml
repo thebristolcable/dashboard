@@ -7,7 +7,7 @@ services:
       - 3000:3000
     network_mode: 'host'
     volumes:
-      - grafana_data:/var/lib/grafana
+      - grafana_data:/var/lib/grafana/data
   mongodb-proxy:
     build: mongodb-proxy/
     ports:

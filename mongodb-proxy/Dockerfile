@@ -3,7 +3,7 @@ FROM node:8-alpine
 RUN apk add unzip curl
 
 RUN mkdir /opt/mongodb-proxy
-RUN curl -L https://github.com/JamesOsgood/mongodb-grafana/archive/master.zip > /tmp/master.zip && \
+RUN curl -L https://github.com/thebristolcable/mongodb-grafana/archive/master.zip > /tmp/master.zip && \
   cd /opt/mongodb-proxy && unzip /tmp/master.zip && cd mongodb-grafana-master && \
   npm install
 

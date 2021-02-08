@@ -1,4 +1,4 @@
-FROM grafana/grafana:6.3.5
+FROM grafana/grafana:7.4.0
 
 RUN mkdir /var/lib/grafana/data
 
